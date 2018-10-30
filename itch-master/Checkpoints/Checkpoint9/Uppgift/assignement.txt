@@ -1,0 +1,15 @@
+URL to your site (on smarterasp.net):
+
+
+
+Database server name (on smarterasp.net):
+
+
+
+User name to log in to your database (on smarterasp.net):
+
+
+
+Password to your database (on smarterasp.net): 
+
+

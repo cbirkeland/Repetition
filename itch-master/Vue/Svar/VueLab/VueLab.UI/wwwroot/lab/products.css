@@ -1,0 +1,10 @@
+﻿.products button, .products div, .products input {
+    display: inline-block;
+    width: 120px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.products button {
+    width: 50px;
+}

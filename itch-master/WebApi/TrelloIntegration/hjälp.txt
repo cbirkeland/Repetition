@@ -1,0 +1,49 @@
+Dokumentation av API'et
+
+https://developers.trello.com/v1.0/reference#api-key-tokens
+
+Hämta key och token:
+
+https://trello.com/app-key
+
+***************************************
+
+ string url = $"https://api.trello.com/1/members/me/boards?key={_devkey}&token={_token}";
+
+*************************************** TrelloController.cs:
+ 
+
+        public async Task<IActionResult> Board(string id)
+        {
+            List<TrelloList> result = await _trelloService.GetAllListsForBoard(id);
+            return View(result);
+        }
+
+*************************************** TrelloService.cs
+
+        public async Task<List<TrelloList>> GetAllListsForBoard(string boardId)
+        {
+            string url = $"https://api.trello.com/.....";
+            string result = await _httpService.Get(url);
+            return JsonConvert.DeserializeObject<List<TrelloList>>(result);
+        }
+
+*************************************** TrelloController.cs:
+
+  	public IActionResult AddCardForm(string id)
+        {
+            var vm = new AddTrelloPost
+            {
+                TrelloListId = id
+            };
+
+            return View("AddCardForm",vm);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddCardForm(AddTrelloPost post)
+        {
+            await _trelloService.CreateAcardOnAlist(post.TrelloListId, post.Name, post.Description);
+
+            return View("AddCardFormResponse", post);
+        }

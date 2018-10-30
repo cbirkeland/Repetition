@@ -1,0 +1,20 @@
+// Skapa en fil ExceptionFilterAttribute.cs i en mapp "Filters"
+
+        public class ExceptionFilterAttribute : IExceptionFilter
+        {
+            public void OnException(ExceptionContext context)
+            {
+                string errorMessage = $"\n\n***** {DateTime.Now} ******\n\n{context.Exception.Message}\n\n{context.Exception.InnerException?.Message}\n\n{context.Exception.StackTrace}";
+                System.IO.File.AppendAllText("fellogg.txt", errorMessage);
+            }
+        }
+
+
+
+// Lägg in i Startup.cs:
+
+            services.AddMvc(config =>
+            {
+                config.Filters.Add(new ExceptionFilterAttribute()); 
+            }).SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+

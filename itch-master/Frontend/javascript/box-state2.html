@@ -1,0 +1,55 @@
+
+<style>
+    #box {
+        width: 300px;
+        height: 300px;
+        border: solid 1px;
+    }
+
+    #myButton {
+        margin-bottom: 20px
+    }
+</style>
+
+<button id="myButton">Click me</button>
+
+<div id="box">
+</div>
+
+<script>
+
+    let box = document.getElementById("box");
+    let myButton = document.getElementById("myButton");
+    let currentState = 0;
+
+    function updateState() {
+        currentState++;
+        if (currentState > 2) {
+            currentState = 0;
+        }
+    }
+
+    function changeBoxColor(c) {
+        box.style.backgroundColor = c;
+    }
+
+    function paintBox() {
+
+        if (currentState == 0) {
+            changeBoxColor("red");
+        } else if (currentState == 1) {
+            changeBoxColor("green");
+        } else if (currentState == 2) {
+            changeBoxColor("blue");
+        }
+    }
+
+    myButton.addEventListener("click", ()=>{
+        updateState();
+        paintBox();
+
+    });
+
+    paintBox();
+
+</script>

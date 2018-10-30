@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>lab</title>
+    <link href="products.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="app">
+        <h3>Varukorg</h3>
+        <div class="products" v-for="product in products">
+            <input type="number" v-model.number="product.quantity" />
+
+            <!--v-on:keyup="assertPositive(product)" v-on:change="assertPositive(product)"-->
+
+            <button @click="increase(product)">+</button>
+            <button @click="decrease(product)">-</button>
+            <div style="text-align: left">{{product.quantity}} st {{product.name}}</div>
+            <div v-if="product.quantity===0">NOLL</div>
+        </div>
+
+        <div>Antal produkter: {{totalProducts}}</div>
+    </div>
+    <script src="../js/vue.js"></script>
+    <script src="products.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>lab3</title>
+</head>
+<body>
+    <div id="app">
+        <h3>Alla namn</h3>
+        <ul>
+            <li v-for="n in names">{{n}}</li>
+        </ul>
+
+        <h3>Börjar på R</h3>
+        <ul>
+            <li v-for="n in startsWithR">{{n}}</li>
+        </ul>
+
+        <h3>Börjar på M</h3>
+        <ul>
+            <li v-for="n in startsWithM">{{n}}</li>
+        </ul>
+
+        <h3>Börjar på ett vissa tecken</h3>
+        Ange tecken <input v-model="charStart">
+        Känslig för case <input type="checkbox" v-model="caseSensitive">
+
+        <ul>
+            <li v-for="n in startsWithChar(charStart)">{{n}}</li>
+        </ul>
+
+        <h3>Lägg till ett namn</h3>
+        <input v-model="newname" />
+        <button @click="addName()">Ok</button>
+    </div>
+
+    <script src="../js/vue.js"></script>
+    <script src="lab3.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>lab</title>
+</head>
+<body>
+
+<div id="app">
+    
+    <button @click="buttonClick">Tryck</button> <br />
+    
+    Räknare: {{counter}}
+    
+    <div v-if="manytimes">
+        Du har tryckt massa gånger!
+    </div>
+    
+    <div v-if="morethan20">
+        Oj! Du har tryckt mer än 20 gånger!
+    </div>
+
+</div>
+    <script src="../js/vue.js"></script>
+    <script src="lab2.js"></script>
+
+</body>
+</html>

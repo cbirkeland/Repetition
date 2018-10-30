@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="css/main.css" rel="stylesheet">
+    <meta charset="utf-8"/>
+</head>
+
+<body class="page-black" onload="bulbService.init('playground')">
+
+    <div id="playground" class="playground playground-black">
+    </div>
+
+    <script>
+
+        // Samma som sist men med "Revealing Module Pattern"
+
+        // Todo: nästa steg, separera styling o kunna ställa in styling vid init! (ev inte vara beroende av css-filen)
+
+        let bulbService = (function () {
+
+            // Håller reda på antal glödlampor och om de är på eller av
+            const bulbState = [];
+            let nrOfBulbs = 0;
+
+            // Huvudelementen för knapparna och bilderna
+            let buttons={};
+            let images={};
+
+            function init(id) {
+
+                // Bara rubriken
+                const heading = document.createElement("div");
+                heading.style.color = "#fff";
+                heading.innerText = "Number of bulbs";
+
+                // Input fältet, om användaren väljer nytt antal => uppdatera glödlamporna
+                const input = document.createElement("input");
+                input.addEventListener("keyup", () => {
+                    numberOfBulbChanged(input.value);
+                });
+
+                // Placeholder för knapparna och bilderna
+                buttons = document.createElement("div");
+                images = document.createElement("div");
+
+                // Lägg i rubrik, inputfält, knappar och glödlampor utifrån "id"
+                const main = document.getElementById(id);
+                main.appendChild(heading);
+                main.appendChild(input);
+                main.appendChild(buttons);
+                main.appendChild(images);
+
+                // Uppdatera knappar, glödlampor och tänd eller släck lamporna
+                renderBulbsAndButtons();
+                setOnOrOff();
+            }
+
+            function isPositiveWholeNumber(x) {
+                // Returnera sant om strängen "x" är ett positivt heltal
+                return x == parseInt(x) && x >=0;
+            }
+            function numberOfBulbChanged(enteredtext) {
+
+                // Validera
+                if (!isPositiveWholeNumber(enteredtext))
+                    return;
+
+                const userChoice = parseInt(enteredtext);
+
+                // Uppdatera global variabel utfrån använderns val av antal glödlampor
+                nrOfBulbs = userChoice;
+
+                if (userChoice > bulbState.length) {
+                    // Användaren vill ha fler glödlampor => utöka "bulbState"
+                    const bulbsToAdd = userChoice - bulbState.length;
+                    for (let i = 0; i < bulbsToAdd; i++)
+                        bulbState.push(false);
+                }
+
+                renderBulbsAndButtons();
+                setOnOrOff();
+
+            }
+
+            function eraseAllChildren(node) {
+                // Ta bort alla element under en nod
+                while (node.firstChild) {
+                    node.removeChild(node.firstChild);
+                }
+            }
+
+            function createButton(index) {
+                // Lägg till en knapp och koppla den till en viss glödlampa
+                const button = document.createElement("button");
+                button.className = "button-smaller";
+                button.addEventListener("click", () => {
+                    toggleBulb(index);
+                });
+                button.innerText=`Toggle bulb ${index+1}`;
+                return button;                        
+            }
+
+            function createImage(index) {
+                const image = document.createElement("img");
+                image.className = "bulb bulb-smaller"; // För styling
+
+                image.addEventListener("click", () => {
+                    toggleBulb(index);
+                });
+
+                return image;
+            }
+
+            function renderBulbsAndButtons() {
+
+                // Ta bort alla knappar och glödlampor
+                eraseAllChildren(buttons);
+                eraseAllChildren(images);
+
+                // Skapa alla knappar och glödlampor (men tänd dem ej)
+                for (let index = 0; index < nrOfBulbs; index++) {
+
+                    buttons.appendChild(createButton(index));
+                    images.appendChild(createImage(index));
+
+                }
+            }
+
+            function setOnOrOff() {
+                const bulbOnImage = "img/bulb-on.jpg";
+                const bulbOffImage = "img/bulb-off.jpg";
+
+                // Utfrån "bulbState" => tänd eller släck lamporna
+                for (let index = 0; index < nrOfBulbs; index++) {
+                    const bulbImage = bulbState[index] ? bulbOnImage : bulbOffImage;
+                    images.childNodes[index].src = bulbImage;
+                }
+
+            }
+
+            function toggleBulb(index) {
+                // Slå på eller av en viss glödlampa
+                bulbState[index] = !bulbState[index];
+                setOnOrOff();
+            }
+
+            return {
+                init: init
+            };
+        })();
+
+    </script>
+</body>
+
+</html>
