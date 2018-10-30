@@ -50,7 +50,7 @@ namespace M3_Control
 
             Console.ForegroundColor = ConsoleColor.Green;
             Console.WriteLine();
-
+            Console.ForegroundColor = ConsoleColor.Green;
             if (sleepTime < 6)
             {
                 Console.WriteLine($"You've only slept {sleepTime}. Go back to bed!");
@@ -61,8 +61,9 @@ namespace M3_Control
             }
             else
             {
-                Console.WriteLine($"You have slept well. ({sleepTime} hours)");
+                Console.WriteLine($"You have slept well. {sleepTime} hours)");
             }
+            Console.ResetColor();
 
         }
 

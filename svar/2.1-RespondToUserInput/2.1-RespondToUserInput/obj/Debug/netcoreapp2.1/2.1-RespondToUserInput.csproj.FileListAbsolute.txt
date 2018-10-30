@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\bin\Debug\netcoreapp2.1\2.1-RespondToUserInput.deps.json
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\bin\Debug\netcoreapp2.1\2.1-RespondToUserInput.runtimeconfig.json
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\bin\Debug\netcoreapp2.1\2.1-RespondToUserInput.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\bin\Debug\netcoreapp2.1\2.1-RespondToUserInput.dll
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\bin\Debug\netcoreapp2.1\2.1-RespondToUserInput.pdb
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.dll
+C:\Users\Administrator\Desktop\Repetition\svar\2.1-RespondToUserInput\2.1-RespondToUserInput\obj\Debug\netcoreapp2.1\2.1-RespondToUserInput.pdb
