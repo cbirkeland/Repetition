@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2048
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantPluralSight", "RestaurantPluralSight\RestaurantPluralSight.csproj", "{790C54D9-0550-4922-AA46-5D18635B1884}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{790C54D9-0550-4922-AA46-5D18635B1884}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{790C54D9-0550-4922-AA46-5D18635B1884}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{790C54D9-0550-4922-AA46-5D18635B1884}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{790C54D9-0550-4922-AA46-5D18635B1884}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1EAB268E-C46D-449B-8B86-9BBDB15297D5}
+	EndGlobalSection
+EndGlobal

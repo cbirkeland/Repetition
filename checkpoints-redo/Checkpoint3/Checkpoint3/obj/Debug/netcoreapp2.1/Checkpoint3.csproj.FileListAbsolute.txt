@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\bin\Debug\netcoreapp2.1\Checkpoint3.deps.json
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\bin\Debug\netcoreapp2.1\Checkpoint3.runtimeconfig.json
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\bin\Debug\netcoreapp2.1\Checkpoint3.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\bin\Debug\netcoreapp2.1\Checkpoint3.dll
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\bin\Debug\netcoreapp2.1\Checkpoint3.pdb
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.dll
+C:\Users\Administrator\Desktop\Repetition\checkpoints-redo\Checkpoint3\Checkpoint3\obj\Debug\netcoreapp2.1\Checkpoint3.pdb

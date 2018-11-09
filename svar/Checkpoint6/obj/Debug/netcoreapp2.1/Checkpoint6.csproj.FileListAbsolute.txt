@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\bin\Debug\netcoreapp2.1\Checkpoint6.deps.json
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\bin\Debug\netcoreapp2.1\Checkpoint6.runtimeconfig.json
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\bin\Debug\netcoreapp2.1\Checkpoint6.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\bin\Debug\netcoreapp2.1\Checkpoint6.dll
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\bin\Debug\netcoreapp2.1\Checkpoint6.pdb
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.dll
+C:\Users\Administrator\Desktop\Blandat shit\Checkpoint6\obj\Debug\netcoreapp2.1\Checkpoint6.pdb
