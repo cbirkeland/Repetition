@@ -26,9 +26,15 @@ namespace RestaurantPluralSight.Migrations
 
                     b.Property<int>("Cuisine");
 
+                    b.Property<string>("EmailAddress")
+                        .IsRequired();
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(80);
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired();
 
                     b.HasKey("Id");
 

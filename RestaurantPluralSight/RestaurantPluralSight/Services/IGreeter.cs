@@ -13,7 +13,7 @@ namespace RestaurantPluralSight.Services
 
         public string GetMessageOfTheDay()
         {
-            return "Greetings";
+            return "";
         }
 
         public Greeter(IConfiguration configuration)

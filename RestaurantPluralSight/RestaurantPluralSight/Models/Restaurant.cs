@@ -11,9 +11,17 @@ namespace RestaurantPluralSight.Models
     {
         public int Id { get; set; }
 
-        [Display(Name="Restaurant Name")]
+        [Display(Name="Fullständigt namn")]
         [Required, MaxLength(80)]
         public string Name { get; set; }
+
+        [Required]
+        public string PhoneNumber { get; set; }
+
+        [Required, DataType(DataType.EmailAddress)]
+        public string EmailAddress { get; set; }
+
+
         public CuisineType Cuisine { get; set; }
 
     }

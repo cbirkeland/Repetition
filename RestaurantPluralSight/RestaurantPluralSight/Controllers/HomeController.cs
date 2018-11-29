@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using RestaurantPluralSight.Models;
 using RestaurantPluralSight.Services;
 using RestaurantPluralSight.ViewModels;
@@ -10,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace RestaurantPluralSight.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private IRestaurantData _restaurantData;
@@ -21,6 +23,7 @@ namespace RestaurantPluralSight.Controllers
             _greeter = greeter;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
 
@@ -42,6 +45,7 @@ namespace RestaurantPluralSight.Controllers
         [HttpGet]
         public IActionResult Create()
         {
+
             return View();
         }
 
@@ -54,6 +58,8 @@ namespace RestaurantPluralSight.Controllers
                 var newRestaurant = new Restaurant();
                 newRestaurant.Name = model.Name;
                 newRestaurant.Cuisine = model.Cuisine;
+                newRestaurant.EmailAddress = model.EmailAddress;
+                newRestaurant.PhoneNumber = model.PhoneNumber;
 
                 newRestaurant = _restaurantData.Add(newRestaurant);
 

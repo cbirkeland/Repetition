@@ -4,23 +4,42 @@
 @{ 
     ViewBag.Title = "Create";
 }
+<link href="~/main.css" rel="stylesheet" />
+<div style="text-align:center">
+    <h1>Ny beställning</h1>
+    <br />
 
-<h1>Create</h1>
+    <form method="post">
 
-<form method="post">
+        <div>
+            <label asp-for="Name"></label>
+            <input asp-for="Name" />
+            <span asp-validation-for="Name"></span>
+        </div>
 
-    <div>
-        <label asp-for="Name"></label>
-        <input asp-for="Name" />
-        <span asp-validation-for="Name"></span>
-    </div>
 
-    <div>
-        <label asp-for="Cuisine"></label>
-        <select asp-for="Cuisine" asp-items="@Html.GetEnumSelectList<CuisineType>()"> </select>
-        <span asp-validation-for="Cuisine"></span>
 
-    </div>
-    <input type="submit" name="save" value="Save" />
-    @*<span asp-validation-summary=""></span>     Blir som en lista med alla fel.*@
-</form>
+        <div>
+            <label asp-for="EmailAddress">E-postadress</label>
+            <input asp-for="EmailAddress" />
+            <span asp-validation-for="EmailAddress"></span>
+        </div>
+
+        <div>
+            <label asp-for="PhoneNumber">Telefonnummer</label>
+            <input asp-for="PhoneNumber" />
+            <span asp-validation-for="PhoneNumber"></span>
+        </div>
+
+        <div>
+            <label asp-for="Cuisine">Antal dosor</label>
+            <select asp-for="Cuisine" asp-items="@Html.GetEnumSelectList<CuisineType>()"> </select>
+            <span asp-validation-for="Cuisine"></span>
+
+        </div>
+
+
+        <input type="submit" name="save" value="Save" />
+        @*<span asp-validation-summary=""></span>     Blir som en lista med alla fel.*@
+    </form>
+</div>

@@ -1,13 +1,24 @@
 ﻿@model RestaurantPluralSight.Models.Restaurant
 
-@{ 
+@{
     ViewBag.Title = Model.Name;
 }
+<link href="~/main.css" rel="stylesheet" />
+<div></div>
+<br />
 
-<h1>@Model.Name</h1>
+<div style="text-align:center">
+    <h1>@Model.Name</h1>
 
-<div>Id: @Model.Id</div>
+    <div>Kundnummer: @Model.Id</div>
 
-<div>Cuisine: @Model.Cuisine</div>
+    <div>Antal dosor: @Model.Cuisine</div>
 
-<a asp-action="Index" asp-controller="Home">Home</a>
+    <div>E-post: @Model.EmailAddress</div>
+
+    <div>Telefonnummer: @Model.PhoneNumber</div>
+
+
+
+    <a asp-action="Index" asp-controller="Home">Hem</a>
+</div>

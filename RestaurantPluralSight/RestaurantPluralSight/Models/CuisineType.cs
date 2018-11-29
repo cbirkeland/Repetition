@@ -8,9 +8,11 @@ namespace RestaurantPluralSight.Models
 {
     public enum CuisineType
     {
-        None,
-        Italian,
-        French,
-        German
+        En,
+        Två,
+        Tre,
+        Fyra,
+        Fem,
+        Stock
     }
 }

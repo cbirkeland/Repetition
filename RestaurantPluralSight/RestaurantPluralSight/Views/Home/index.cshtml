@@ -4,15 +4,21 @@
     ViewBag.Title = "Home Page";
     
 }
-<h1>All Restaurants</h1>
-@foreach (var restaurant in Model.Restaurants)
-{
-    @Html.Partial("_Summary", restaurant)
-}
 
+<div style="text-align:center">
+    <link href="~/main.css" rel="stylesheet" />
+    <div id="Rubrik">
+        <h1>Beställningar</h1>
+    </div>
+    <br />
+    @foreach (var restaurant in Model.Restaurants)
+    {
+        @Html.Partial("_Summary", restaurant)
+    }
 
-<div>
-    <a asp-action="Create">Add Restaurant</a>
+    <br />
+    <div>
+        <a class="btn btn-warning" asp-action="Create">Skapa order</a>
+    </div>
 </div>
-
 

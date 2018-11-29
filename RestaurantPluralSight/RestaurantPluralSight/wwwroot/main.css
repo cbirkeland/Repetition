@@ -1,0 +1,15 @@
+﻿body {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    color: #F6DC8F;
+    font-family: 'Lucida Console'
+}
+
+.Rubrik {
+    color: gold;
+}
+
+#navbar-brand {
+    text-align:center;
+}
