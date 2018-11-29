@@ -56,7 +56,7 @@ using RestaurantPluralSight.ViewModels;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             BeginContext(57, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "ba522111deb840868eb976952a4f832a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "32a35667e1c74849b9fc2485a3972cd0", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -95,7 +95,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("</div>\r\n\r\n        <div class=\"panel-footer\">\r\n            ");
             EndContext();
             BeginContext(348, 85, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7364778c6e446c1b4e404d15f77efa7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9cacf0d1992f40fc883f59f77164fcf6", async() => {
                 BeginContext(421, 8, true);
                 WriteLiteral("Detaljer");
                 EndContext();
@@ -131,7 +131,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("\r\n            ");
             EndContext();
             BeginContext(447, 90, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "31a8a3c4ba954cb1a72a286ac6134806", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "1021e86d057b4abe96c0bca2777dc1cc", async() => {
                 BeginContext(528, 5, true);
                 WriteLiteral("Ändra");
                 EndContext();

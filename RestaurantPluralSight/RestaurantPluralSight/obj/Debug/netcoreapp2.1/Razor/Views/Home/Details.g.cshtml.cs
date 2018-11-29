@@ -64,7 +64,7 @@ using RestaurantPluralSight.ViewModels;
 #line default
 #line hidden
             BeginContext(90, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "5775cb80086d45f7b769fe4051b11adf", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2af12f91f5304cf0b3a09c611c86bc30", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -133,7 +133,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("</div>\r\n\r\n\r\n\r\n    ");
             EndContext();
             BeginContext(411, 51, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "34772a15673f496b9cd9dcb3b61c1487", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "eb84cae8c9304ec2a4868e2d2ec61417", async() => {
                 BeginContext(455, 3, true);
                 WriteLiteral("Hem");
                 EndContext();
