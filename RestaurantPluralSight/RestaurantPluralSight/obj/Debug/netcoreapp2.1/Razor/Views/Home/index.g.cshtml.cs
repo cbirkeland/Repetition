@@ -68,7 +68,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("\r\n<div style=\"text-align:center\">\r\n    ");
             EndContext();
             BeginContext(149, 43, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "42a0663f979c4b04b36e49034fd362c7", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3c64982d8b064d87a06093ab6f7d4fad", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -110,7 +110,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("\r\n    <br />\r\n    <div>\r\n        ");
             EndContext();
             BeginContext(419, 62, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e447c97c15fc4b5fb0721395ebb4e3d1", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "613974f1e46a445f9fede749fc44bf8e", async() => {
                 BeginContext(466, 11, true);
                 WriteLiteral("Skapa order");
                 EndContext();
