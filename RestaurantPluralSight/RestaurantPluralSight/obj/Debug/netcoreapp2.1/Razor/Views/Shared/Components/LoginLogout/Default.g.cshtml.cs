@@ -73,7 +73,7 @@ using RestaurantPluralSight.ViewModels;
             WriteLiteral("</div>\r\n    ");
             EndContext();
             BeginContext(87, 82, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3b8c170d8b69415bb3d1f60d5ea845a9", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "09d3834bf7014228b9d608020a3ca4c2", async() => {
                 BeginContext(159, 6, true);
                 WriteLiteral("Logout");
                 EndContext();
@@ -108,7 +108,7 @@ else
             WriteLiteral("    ");
             EndContext();
             BeginContext(187, 80, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "59af6477eb88445aa6df74f7b970a234", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "735d08bdd372418ab2ebb1ded6017ea1", async() => {
                 BeginContext(258, 5, true);
                 WriteLiteral("Login");
                 EndContext();

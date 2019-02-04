@@ -1,0 +1,19 @@
+﻿@model RestaurantPluralSight.Models.Restaurant
+
+@{
+    ViewBag.Title = Model.Name;
+}
+<link href="~/main.css" rel="stylesheet" />
+<div></div>
+<br />
+
+<div style="text-align:center">
+    <h1>Are you sure you want to delete this Cuisine?</h1>
+    <h4>@Model.Name</h4>
+
+    
+
+
+
+    <a asp-action="Index" asp-controller="Home">Hem</a>
+</div>

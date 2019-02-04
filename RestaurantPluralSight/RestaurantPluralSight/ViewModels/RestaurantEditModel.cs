@@ -12,7 +12,7 @@ namespace RestaurantPluralSight.ViewModels
     {
         [Required, MaxLength(80)]
         public string Name { get; set; }
-        public CuisineType Cuisine { get; set; }
+        public string Cuisine { get; set; }
         public string PhoneNumber { get; set; }
         public string EmailAddress { get; set; }
 

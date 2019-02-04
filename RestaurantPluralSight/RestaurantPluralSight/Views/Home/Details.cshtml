@@ -10,15 +10,15 @@
 <div style="text-align:center">
     <h1>@Model.Name</h1>
 
-    <div>Kundnummer: @Model.Id</div>
+    <h5>Kundnummer: @Model.Id</h5>
 
-    <div>Antal dosor: @Model.Cuisine</div>
+    <h5>Antal dosor: @Model.Cuisine</h5>
 
-    <div>E-post: @Model.EmailAddress</div>
+    <h5>E-post: @Model.EmailAddress</h5>
 
-    <div>Telefonnummer: @Model.PhoneNumber</div>
+    <h5>Telefonnummer: @Model.PhoneNumber</h5>
 
+    <br />
 
-
-    <a asp-action="Index" asp-controller="Home">Hem</a>
+    <a class="btn btn-warning" asp-action="Index" asp-controller="Home">Hem</a>
 </div>

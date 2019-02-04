@@ -40,5 +40,13 @@ namespace RestaurantPluralSight.Services
             _context.SaveChanges();
             return restaurant;
         }
+
+        public void Remove(int id)
+        {
+            var r = _context.Restaurants.First(x => x.Id == id);
+            _context.Restaurants.Remove(r);
+            _context.SaveChanges();
+            
+        }
     }
 }

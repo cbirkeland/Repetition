@@ -1,15 +1,34 @@
 ﻿@using RestaurantPluralSight.Models
 @model Restaurant
 
-@{ 
+@{
     ViewBag.Title = "Create";
 }
 <link href="~/main.css" rel="stylesheet" />
-<div style="text-align:center">
-    <h1>Ny beställning</h1>
-    <br />
+<link href="~/input.css" rel="stylesheet" />
+<div style="text-align:center" >
+    <div class="container">
+        <br />
+        <p class="infoText">
+            Stöd utvecklingen, och bli en del av early Geist! När vi nu börjar närma oss version 1.0 av Geist, öppnar vi upp en intresseanmälan och kölista för alla early birds! :)
 
-    <form method="post">
+            Så du vill stödja utvecklingen av Geist, och samtidigt lägga beslag på några tidiga dosor eller stockar fyllda med pastiller innehållandes vad skulle kunna vara den bästa, mest oprocesserade hampan i världen, signa upp för en plats i kön nedan!
+
+            Vi kommer att serva beställningarna i tur och ordning, och kontaktar dig så fort dina dosor är klara för leverans. Anmälan är således inte bindande, utan du kan ta ett slutgiltigt beslut då vi kontaktar dig.
+
+            En dosa ger dig 12 hampa pastiller, var och en innehållandes 10mg av 150+ olika, nyttiga cannabinoider, samt en massa hälsosamma, naturliga fettlösare.
+        </p>
+
+        <h5 class="prisLista">
+            Preliminära priser:
+
+            dosa - 150 kr   |   stock (10 dosor) - 1200 kr
+        </h5>
+
+    </div>
+    
+
+    @*<form method="post">
 
         <div>
             <label asp-for="Name"></label>
@@ -40,6 +59,43 @@
 
 
         <input type="submit" name="save" value="Save" />
-        @*<span asp-validation-summary=""></span>     Blir som en lista med alla fel.*@
-    </form>
+        
+    </form>*@
+</div>
+<div class="bottom">
+    <div style="text-align:center">
+        <form method="post">
+            <input asp-for="Name" id="input-1" type="text" placeholder="Ditt namn här" required />
+            <label for="input-1">
+                <span class="label-text">Ditt namn</span>
+                <span class="nav-dot"></span>
+                <div class="signup-button-trigger">Gå med</div>
+                
+            </label>
+            <input asp-for="EmailAddress" id="input-2" type="email" placeholder="email@address.com" required />
+            <label for="input-2">
+                <span class="label-text">Email</span>
+                <span class="nav-dot"></span>
+                
+            </label>
+            <input asp-for="PhoneNumber" id="input-3" type="text" placeholder="Telefonnummer" required />
+            <label for="input-3">
+                <span class="label-text">Telefonnummer</span>
+                <span class="nav-dot"></span>
+                
+                
+            </label>
+
+            <input asp-for="Cuisine" id="input-4" type="text" placeholder="Antal dosor/stockar" required />
+            <label for="input-4">
+                <span class="label-text">Antal dosor/stockar</span>
+                <span class="nav-dot"></span>
+                
+            </label>
+
+            <button type="submit" name="save" value="Save">Skapa din Cuisine</button>
+            <p class="tip">Tryck på Enter</p>
+            <div class="signup-button" autofocus>Beställ här</div>
+        </form>
+    </div>
 </div>

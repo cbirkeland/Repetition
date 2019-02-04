@@ -12,6 +12,7 @@ namespace RestaurantPluralSight.Services
         Restaurant Get(int id);
         Restaurant Add(Restaurant restaurant);
         Restaurant Update(Restaurant restaurant);
+        void Remove(int id);
             
     }
 }

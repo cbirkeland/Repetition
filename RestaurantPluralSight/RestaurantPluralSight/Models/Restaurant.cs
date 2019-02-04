@@ -15,14 +15,16 @@ namespace RestaurantPluralSight.Models
         [Required, MaxLength(80)]
         public string Name { get; set; }
 
+        [Display(Name = "Telefonnummer")]
         [Required]
         public string PhoneNumber { get; set; }
 
+        [Display(Name = "Email")]
         [Required, DataType(DataType.EmailAddress)]
         public string EmailAddress { get; set; }
 
-
-        public CuisineType Cuisine { get; set; }
+        [Display(Name = "Beställning")]
+        public string Cuisine { get; set; }
 
     }
 

@@ -51,6 +51,20 @@ namespace RestaurantPluralSight.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            if (ModelState.IsValid)
+            {
+                _restaurantData.Remove(id);
+                return RedirectToAction("Index");
+
+            }
+
+            return RedirectToAction("Edit");
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult Create(RestaurantEditModel model )
         {
             if (ModelState.IsValid)

@@ -6,12 +6,23 @@
 <div style="text-align:center">
     <section class="panel panel-default">
         <h3 class="panel-heading">@Model.Name</h3>
-        <div class="panel-body">Beställning : @Model.Cuisine</div>
-
+        <h4 class="panel-body">Beställning : @Model.Cuisine</h4>
+        
         <div class="panel-footer">
-            <a class="btn btn-default" asp-action="Details" asp-route-id="@Model.Id">Detaljer</a>
-            <a class="btn btn-default" asp-page="/Restaurants/Edit" asp-route-id="@Model.Id">Ändra</a>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <a button class="btn btn-secondary" asp-action="Details" asp-route-id="@Model.Id">Detaljer</a>
+                <a button class="btn btn-secondary" asp-page="/Restaurants/Edit" asp-route-id="@Model.Id">Ändra</a>
+                <form asp-action="Delete" asp-route-id="@Model.Id" method="post">
+                    <button class="btn btn-secondary" type="submit">Delete</button>
+                </form>
+                
+            </div>
+            
+           
         </div>
+        <br />
+        <br />
+
 
     </section>
 </div>
